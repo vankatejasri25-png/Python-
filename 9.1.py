@@ -1,0 +1,10 @@
+m = float(input("Material cost: "))
+l = float(input("Labour cost: "))
+mc = float(input("Machine cost: "))
+w = float(input("Wastage percentage: "))
+s = float(input("Selling price: "))
+cost = (m + l + mc) * (1 + w / 100)
+profit = s - cost
+print("Total Cost:", round(cost, 2))
+print("Profit:", round(profit, 2))
+print("Target Achieved" if profit >= 500 else "Target Not Achieved")
